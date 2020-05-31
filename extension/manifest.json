@@ -3,10 +3,14 @@
     "description" : "Sorts and stores webpages offline based on webpage content",
     "version": "0.1",
     "author": "Jerel Henderson",
-    "manifest_version": 2
+    "manifest_version": 2,
     "icons": {
-	"128": "icon128.png",
-	"48": "icon48.png",
-	"16": "icon16.png",
-    }
+	"128": "box128.png",
+	"48": "box48.png",
+	"16": "box16.png"
+    },
+    "permissions": [
+	"pageCapture",
+	"downloads"
+    ]
 }
