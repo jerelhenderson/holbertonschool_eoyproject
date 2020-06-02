@@ -1,0 +1,23 @@
+{
+    "name": "Sort-'n-Store Bookmarks",
+    "description" : "Sorts and stores webpages offline based on webpage content",
+    "version": "0.1",
+    "author": "Jerel Henderson",
+    "manifest_version": 2,
+    "icons": {
+	"128": "icons/box128.png",
+	"48": "icons/box48.png",
+	"16": "icons/box16.png"
+    },
+    "browser_action": {
+	"default_icon": "icon.png",
+    },
+    "permissions": [
+	"activeTab",
+	"clipboardWrite"
+    ],
+    "background": {
+	"persistent": false,
+	"scripts": ["scripts/background.js"]
+    }
+}

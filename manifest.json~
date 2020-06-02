@@ -5,12 +5,9 @@
     "author": "Jerel Henderson",
     "manifest_version": 2,
     "icons": {
-	"128": "box128.png",
-	"48": "box48.png",
-	"16": "box16.png"
+	"128": "icons/box128.png",
+	"48": "icons/box48.png",
+	"16": "icons/box16.png"
     },
-    "permissions": [
-	"pageCapture",
-	"downloads"
-    ]
+    
 }
