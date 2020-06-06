@@ -1,12 +1,12 @@
 # Store-'n-Sort
-## Store webpages, sort webpages
+## Store webpage, sort webpage
 
 ### Purpose
 This project is a Chrome extension that adds and sorts webpages offline according to the content
 found on the webpage.
 
-### Features
-Stores webpages
+### Dependencies
+stopword
 
 ### Installation
 Coming soon...

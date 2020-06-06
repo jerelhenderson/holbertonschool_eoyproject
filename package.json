@@ -1,0 +1,25 @@
+{
+  "name": "Store-'n-Sort",
+  "version": "1.0.0",
+  "description": "### Purpose This project is a Chrome extension that adds and sorts webpages offline according to the content found on the webpage.",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.87.0",
+    "unfluff": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerelhenderson/holbertonschool_eoyproject.git"
+  },
+  "keywords": [],
+  "author": "Jerel Henderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerelhenderson/holbertonschool_eoyproject/issues"
+  },
+  "homepage": "https://github.com/jerelhenderson/holbertonschool_eoyproject#readme"
+}
