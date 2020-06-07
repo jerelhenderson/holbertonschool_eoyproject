@@ -1,13 +1,16 @@
+// let sw = require('stopword');
+// let extractor = require('unfluff');
+
 function getWords(data) {
     data = extractor(data);
     alert(data);
-}
+
     let wordsArray = splitWords(data["text"]);
     let wordsMap = countWords(wordsArray);
     let sortedList = sortByFreq(wordsMap);
 
     console.log("/" + sortedList[0]["word"] + "/" + sortedList[1]["word"] + "-" + sortedList[2]["word"]); 
-});
+};
 
 function splitWords (givenText) {
     let changedString = givenText.replace(/\W/g, ' ').replace(/\d+/g, '').replace(/ +(?= )/g, '').toLowerCase();
