@@ -4,7 +4,7 @@
   "description": "### Purpose This project is a Chrome extension that adds and sorts webpages offline according to the content found on the webpage.",
   "main": "index.js",
   "dependencies": {
-    "request": "^2.87.0",
+    "stopword": "^0.1.10",
     "unfluff": "^3.0.1"
   },
   "devDependencies": {},

@@ -1,7 +1,7 @@
 {
     "name": "Sort-'n-Store",
     "description" : "Sorts and stores webpages offline based on webpage content",
-    "version": "0.1",
+    "version": "1.0.0",
     "author": "Jerel Henderson",
     "manifest_version": 2,
     "icons": {
@@ -25,14 +25,20 @@
 	"downloads",
 	"storage",
 	"pageCapture",
-	"file:///*"
+	"file:///*",
+	"<all_urls>"
     ],
     "background": {
 	"persistent": false,
 	"scripts": [
-	    "store_page/scripts/store_background.js",
-	    "store_page/scripts/promises.js",
-	    "sort_page/scripts/sort_background.js"
-	]	
+	    "promises/promisify.js",
+	    "content/request.js",
+	    "sort_page/sort.js",
+	    "background.js"
+	]
     },
+    "content_scripts": [{ 
+	"matches": [ "<all_urls>" ],
+        "js": [ "content/content.js" ]
+    }],
 }
