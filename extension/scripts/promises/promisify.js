@@ -12,9 +12,9 @@ function promisify(fn) {
         args[args.length - 1] = callback;
         fn.apply(this, args);
       });
-    }
+    };
   };
-}
+};
 
 function promisifyAll(...args) {
   for (let target of args) {
@@ -22,7 +22,7 @@ function promisifyAll(...args) {
       let val = target[key];
       if (typeof val === 'function') {
         target[key] = this.promisify(val);
-      }
-    }
-  }
-}
+      };
+    };
+  };
+};
