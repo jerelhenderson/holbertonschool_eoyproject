@@ -1,26 +1,6 @@
 let sw = require('stopword');
 let extractor = require('@knod/unfluff');
 
-chrome.browserAction.onClicked.addListener(function () {
-    chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
-        let url = tabs[0].url;
-        grabHTML(url);
-        alert(url);
-    });
-});
-
-function grabHTML(url) {
-    let xhr = new XMLHttpRequest();
-
-    xhr.onload = function() {
-        pageSource = xhr.responseText;
-	alert(pageSource);
-        getWords(pageSource);
-    };
-    xhr.open("GET", url);
-    xhr.send();
-};
-
 function getWords(data) {
     data = extractor(data);
     alert(data);
