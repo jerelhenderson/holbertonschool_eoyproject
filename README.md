@@ -1,15 +1,17 @@
-# Store-'n-Sort
-## Store webpage, sort webpage
+# Sort-'n-Store
+## Sort webpage, store webpage
 
 ### Purpose
-This project is a Chrome extension that adds and sorts webpages offline according to the content
-found on the webpage.
+This project is a Chrome extension that sorts and stores webpages offline according to the content
+found on the web page.
 
 ### Dependencies
 stopword
+unfluff
 
 ### Installation
-Coming soon...
+Current: Developer Mode -> Load Unpacked (Extension)
+Future: Chrome Web Store
 
 ### File Stucture
 | Program	  | Description						     |
@@ -17,10 +19,12 @@ Coming soon...
 |extension/manifest.json | Chrome extension manifest file|
 
 ### Usage
-To be determined
+Current: `ALT + B`
+Soon: Automated (User Preference)
+Future: Automated (Learns User Preference)
 
 ### Bugs
-Nothing to be bugged
+Chrome API does not allow for automated modification of the "Downloads" folder 
 
 ### Author
 Jerel Henderson
