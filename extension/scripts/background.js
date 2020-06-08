@@ -18,7 +18,7 @@ async function save(tab) {
 
     mht = mht.replace(/^(Subject: )(.*)$/m, `$1${tab.title}`);
     saveFile = new Blob([mht]);
-  };
+  }
 
   const filename = `${cleanUp(tab.title)}.mht`;
 
@@ -32,7 +32,7 @@ async function save(tab) {
       filename: filename,
       url: URL.createObjectURL(saveFile)
     });
-  };
+  }
 
   function readBlobAsync(saveFile) {
     return new Promise((resolve, reject) => {
@@ -49,4 +49,5 @@ async function save(tab) {
 
   function cleanUp(filename) {
     return filename.replace(/[<>:"/\\|?*\x00-\x1F]/g, '');
-};
+  }
+}
