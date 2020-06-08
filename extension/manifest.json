@@ -31,14 +31,14 @@
     "background": {
 	"persistent": false,
 	"scripts": [
-	    "promises/promisify.js",
-	    "content/request.js",
-	    "sort_page/sort.js",
-	    "background.js"
+	    "scripts/promises/promisify.js",
+            "dist/bundle.js",
+	    "scripts/content/request.js",
+	    "scripts/background.js"
 	]
     },
     "content_scripts": [{ 
 	"matches": [ "<all_urls>" ],
-        "js": [ "content/content.js" ]
-    }],
+        "js": [ "scripts/content/content.js" ]
+    }]
 }
