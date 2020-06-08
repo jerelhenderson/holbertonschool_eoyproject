@@ -2,10 +2,10 @@
   "name": "Store-'n-Sort",
   "version": "1.0.0",
   "description": "### Purpose This project is a Chrome extension that adds and sorts webpages offline according to the content found on the webpage.",
-  "main": "index.js",
+  "main": "manifest.json",
   "dependencies": {
-    "stopword": "^0.1.10",
-    "unfluff": "^3.0.1"
+    "@knod/unfluff": "^1.3.2",
+    "stopword": "^0.1.10"
   },
   "devDependencies": {},
   "scripts": {
